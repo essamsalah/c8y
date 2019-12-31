@@ -1,0 +1,8 @@
+<!-- The c8y-title component will display the given string (here: "Hello") in the header as title -->
+<c8y-title translate>Hello</c8y-title>
+<div style="margin-bottom: 20px;">{{introductionText | translate}}</div>
+<ul>
+    <li *ngFor="let feature of featureList">
+        {{feature | translate}}
+    </li>
+</ul>
