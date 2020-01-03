@@ -37,6 +37,8 @@ export class DevicesComponent {
     async loadDevices() {
         const { data, res, paging } = await this.inventory.list(this.filter);
         this.devices = data;
+
+        console.log(this.inventory);
     }
 
     // Add a managedObject (as device) to the database.
